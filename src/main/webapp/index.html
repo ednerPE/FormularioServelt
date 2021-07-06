@@ -4,11 +4,11 @@
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="Recursos/estilos.css">
-        <script type="text/javascript" src="Recursos/funciones.js"></script>
+        <script  src="Recursos/funciones.js"></script>
     </head>
     <body>
         <form name="form1"  action="/FormularioConServlets/Servlet" method="post"
-              onsubmit="return validarForm(this)"></form>
+              onsubmit="return validarForm(this)">
         <input type="hidden" name="oculto" value="valorOculto"/>
         <table width="200" id="enfasis-columna">
             <caption>
@@ -21,7 +21,7 @@
                 </td>
                 <td>
                     <input class="default" type="text" name="usuario"
-                           value="Escribir Usuario" onfocus="this.select()"/>
+                           value="Escriba un usuario" onfocus="this.select()"/>
                 </td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@
                     &nbsp;&nbsp;&nbsp;
                     Mujer <input type="checkbox" name="genero" value="M"/>
                     &nbsp;&nbsp;&nbsp;
-                    PrefieroNoDecir <input type="checkbox" name="genero" value="PND" />
+                    PrefieroNoDecir <input type="checkbox" name="genero" value="PND"/>
                 </td>
             </tr>   
 
@@ -70,7 +70,7 @@
                         <option value="">Seleccionar</option>
                         <option value="1">Profesor</option>
                         <option value="2">Ingeniero</option>
-                        <option value="3">Jubilado</option>
+                        <option value="3">Enfemera</option>
                         <option value="4">Otro</option>
                     </select>  
                 </td>
@@ -83,7 +83,7 @@
                 <td>
                     <select name="musica" multiple class="defautl">
                         <option value="rock">Rock</option>
-                        <option value="salsa">Salsa</option>
+                        <option value="salsa">Cumbia</option>
                         <option value="Rancheras">Rancheras</option>
                     </select>    
                 </td>
@@ -112,6 +112,6 @@
                 </td>
             </tr>   
         </table>
-
+</form>
     </body>
 </html>
